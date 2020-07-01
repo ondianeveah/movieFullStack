@@ -1,0 +1,49 @@
+<div class="container">
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Recommended</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{movie.id}}</td>
+            <td>{{movie.title}}</td>
+            <td>{{movie.description}}</td>
+            <td>{{movie.recommended}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-primary" (click)= "goBackToMovieList()">Go Back</button>
+</div>
+
+<!-- <div class="container">
+    <form (ngSubmit)= "editMovieList()">
+        <div class="form-group">
+            <label form="id">Id</label>
+            <input type="text" class="form-control" required [(ngModel)] = "movie.id" name="id" disabled>
+        </div>
+
+        <div class="form-group">
+            <label form="title">Title</label>
+            <input type="text" class="form-control" required [(ngModel)] = "movie.title" name="title" disabled>
+        </div>
+
+        <div class="form-group">
+            <label form="description">Description</label>
+            <input type="text" class="form-control" required [(ngModel)] = "movie.description" name="description" disabled>
+        </div>
+
+        <div class="form-group">
+            <label form="recommended">Recommended</label>
+            <input type="text" class="form-control" required [(ngModel)] = "movie.recommended" name="recommended" disabled>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary" (click)= "goBackToMovieList()">Go Back</button>
+    </form>
+</div> -->
